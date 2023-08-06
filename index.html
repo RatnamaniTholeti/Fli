@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bod">
+    <!-- navigation bar -->
+    <nav class="heading_navigation flex" id="navigation_heading">
+        <div class="nav_container flex">
+            <div class="logo flex">
+                <a href="./html/index.html" class="flip_logo"><img src="./images/logo.png" alt="logo"></a>
+                <a href="./html/index.html" class="anchor plus">Explore <span class="plus_lan">Plus <img src="./images/plus_icon.png" alt="logo"></span></a>
+            </div>
+            <!-- searchbar-->
+            <div class="search_bar_container">
+                <div class="search_bar">
+                    <form action="" class="search flex">
+                        <input type="text" placeholder="Search For products, brands and more" class="search_box">
+                        <button class="btn_search">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!-- Login Button-->
+            <div class="login">
+                <a href="#" class="login_btn">login</a>
+                <div class="login_dropdown none">
+                    <ul class="login_dropdown_list">
+                        <li class="login_drop_li sign_li flex">
+                            <p class="new_login">New customer</p>
+                            <a href="./html/login.html" class="sign_up">Sign Up</a>
+                        </li>
+                        <li class="login_drop_li">My Profile</li>
+                        <li class="login_drop_li">Flipkart Plus Zne</li>
+                        <li class="login_drop_li"> Orders</li>
+                        <li class="login_drop_li">Whishlist</li>
+                        <li class="login_drop_li">Rewards</li>
+                        <li class="login_drop_li">Gift Cards</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- more buttons-->
+            <div class="more">
+                <span class="more_lan"> More
+                    <i class="fa fa-angle-down"></i>
+                </span>
+                <div class="more_dropdown none">
+                    <div class="pointer more_pointer"></div>
+                    <ul class="more_dropdown_list">
+
+                        <li class="more_drop_li">
+                            <i class="more_icon fa fa-bell"></i>Notifications Preferences
+                        </li>
+
+                        <li class="more_drop_li">
+                             <i class="more_icon fa fa-shopping-basket"></i>Sell on Flipkart
+                        </li>
+
+                        <li class="more_drop_li">
+                             <i class="more_icon fa fa-question"></i> 24X7 Customer Care
+                        </li>
+
+                        <li class="more_drop_li">
+                            <i class="more_icon fa fa-line-chart"></i>Advertise
+                        </li>
+
+                        <li class="more_drop_li">
+                            <i class="more_icon fa fa-download"></i>Download App
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- Cart Button-->
+            <div class="cart">
+                <span class="cart_lan"><i class="fa fa-shopping-cart"><a href="#cartt" class="aa" id="aa">Cart<span class="badge" id="notification-badge">1</span></a></i></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Heading Categories-->
+    <div class="heading_categories flex">
+        <ul class="heading_category_list flex">
+            <li class="heading_category_items">
+            <img src="./images/top-offer.png" alt="loading image" class="cat_image">
+            <p class="heading_item_name">Top Offers</p>
+        </li>
+            <li class="heading_category_items p1">
+                <img src="./images/grocery.png" alt="loading image" class="cat_image">
+                <p class="heading_item_name">Grocery</p>
+            </li>
+            <li class="heading_category_items">
+                <img src="./images/mobiles.png" alt="loading image" class="cat_image">
+                <p class="heading_item_name">Mobiles</p>
+            </li>
+            <li class="heading_category_items p2">
+                <img src="./images/fashion.png" alt="loading image" class="cat_image"> 
+                <p class="heading_item_name">Fashion <i class="fa fa-angle-down"></i></p>
+            </li>
+            <li class="heading_category_items">
+                <img src="./images/electronics.png" alt="loading image" class="cat_image">
+                <p class="heading_item_name">Electronics  <i class="fa fa-angle-down"></i></p>
+            </li>
+            <li class="heading_category_items p3">
+                <img src="./images/home.jpg" alt="loading image" class="cat_image">
+                <p class="heading_item_name">Home <i class="fa fa-angle-down"></i></p>
+            </li>
+            <li class="heading_category_items">
+                <img src="./images/appliances.png" alt="loading image" class="cat_image">
+                <p class="heading_item_name">Appliances  <i class="fa fa-angle-down"></i></p>
+            </li>
+            <li class="heading_category_items ">
+                <img src="./images/travel.png" alt="loading image" class="cat_image">
+                <p class="heading_item_name">Travel</p>
+            </li>
+            <li class="heading_category_items">
+                <img src="./images/toys.png" alt="loading image" class="cat_image">
+                <p class="heading_item_name">Beauty, Toys and more  <i class="fa fa-angle-down"></i></p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Carousel-->
+    <div class="carousel_item_container flex">
+        <div class="prev_btn nav_button">
+            <div class="carousel_btn flex">
+                <i class="fa fa-angle-left next_prev"></i>
+            </div>
+        </div>
+        <div class="next_btn nav_button">
+            <div class="carousel_btn flex">
+                <i class="fa fa-angle-right next_prev"></i>
+            </div>
+        </div>
+        <div class="carousel_items flex">
+            <img src="./images/slider1.jpg" alt="loading" class="carousel_image">
+        </div>
+        
+    </div>
+
+    <div class="bestofElectronic_Contianer" >
+        <div class="bestofElectronic_list">
+
+
+            <!-- name -->
+            <div class="BestofElectronic_item ">
+                <div class="bestofElectronic_bigText ii">Fashion Top Deals</div>
+                <a href="#" class="viewAllBtn">View All</a>
+                <div class="bestofElectronicmoreOption i1">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90">
+                </div>
+            </div>
+
+            <!-- products -->
+            <!-- product1 -->
+            <div class="bestofElctronic_product_item a1" >
+               <div class="BestofElectronic_item ">   
+                <div class="bestOfElectornic_image_Product" img-id="13">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-kids-apparel-combo/s/1/4/12-18-months-006-aryanfab-original-imagh57kgprpx9b6.jpeg?q=70">
+               </div>
+                <div class="bestofElectronicmoreOption product " data-id="13" data-name="Shirt Dungaree, Bow Tie " data-price="380" data-img="https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-kids-apparel-combo/s/1/4/12-18-months-006-aryanfab-original-imagh57kgprpx9b6.jpeg?q=70">
+                   <p class="bestofElectornicProduct_name">Shirt Dungaree, Bow Tie </p>
+                   <p class="bestofElecronic_discount">From ₹380</p>
+                   <!-- <p class="bestofElectronic_brand">DELL</p> -->
+                    <button class="add-to-cart" >ADD TO CART</button>
+                </div>
+            </div>
+            </div>
+        <!-- product2 -->
+
+            <div class="product" >
+    <div class="BestofElectronic_item a2">   
+
+    <div class="bestOfElectornic_image_Product" img-id="14">
+        <img src="https://rukminim2.flixcart.com/image/832/832/l1whaq80/kids-t-shirt/g/o/e/7-8-years-mactshrt332-disney-by-miss-chief-original-imagdcuhga28cm4m.jpeg?q=70">
+    </div>
+    <div class="bestofElectronicmoreOption" data-id="14" data-name="Blend T Shirt(Pack of 3)" data-price="474" data-img="https://rukminim2.flixcart.com/image/832/832/l1whaq80/kids-t-shirt/g/o/e/7-8-years-mactshrt332-disney-by-miss-chief-original-imagdcuhga28cm4m.jpeg?q=70">
+        <p class="bestofElectornicProduct_name">Blend T Shirt(Pack of 3)</p>
+        <p class="bestofElecronic_discount">From ₹474</p>
+        <button class="add-to-cart" >ADD TO CART</button>
+
+
+
+
+    </div>
+    </div>
+
+</div>
+
+
+<div class="product" >
+    <div class="BestofElectronic_item a3">   
+
+    <div class="bestOfElectornic_image_Product" img-id="15" >
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/lehenga-choli/m/q/7/free-half-sleeve-pochampalli-pattu-fabcartz-original-imaggvyj73udeg3h.jpeg?q=70">
+    </div>
+    <div class="bestofElectronicmoreOption" data-id="15" data-name="Stitched Lehenga Choli" data-price="792" data-img="https://rukminim2.flixcart.com/image/612/612/xif0q/lehenga-choli/m/q/7/free-half-sleeve-pochampalli-pattu-fabcartz-original-imaggvyj73udeg3h.jpeg?q=70">
+        <p class="bestofElectornicProduct_name">Stitched Lehenga Choli</p>
+        <p class="bestofElecronic_discount">From ₹792</p>
+        <button class="add-to-cart" >ADD TO CART</button>
+
+
+
+
+
+    </div>
+    </div>
+
+</div>
+
+
+<div class="product" >
+    <div class="BestofElectronic_item a4">   
+
+    <div class="bestOfElectornic_image_Product" img-id="16" >
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/b/d/f/3xl-13-lstr-wine-vtexx-original-imagnzbummhkgr7p.jpeg?q=70">
+    </div>          
+    <div class="bestofElectronicmoreOption" data-id="16" data-name="Collar Formal Shirt" data-price="399" data-img="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/b/d/f/3xl-13-lstr-wine-vtexx-original-imagnzbummhkgr7p.jpeg?q=70">
+        <p class="bestofElectornicProduct_name">Collar Formal Shirt</p>
+        <p class="bestofElecronic_discount">From ₹399</p>
+        <button class="add-to-cart" >ADD TO CART</button>
+
+
+
+
+
+    </div>
+    </div>
+
+</div>
+
+
+<div class="product" >
+    <div class="BestofElectronic_item a5">   
+
+    <div class="bestOfElectornic_image_Product" img-id="17" >
+        <img src="https://rukminim2.flixcart.com/image/832/832/kflftzk0hlty2aw-0/shirt/4/4/v/m-2-sys-4007-08-funday-fashion-original-imafw7ksgd6nvwz3.jpeg?q=70">
+    </div>
+    <div class="bestofElectronicmoreOption" data-id="17" data-name="Casual Shirt(Pack of 2)" data-price="499" data-img="https://rukminim2.flixcart.com/image/832/832/kflftzk0hlty2aw-0/shirt/4/4/v/m-2-sys-4007-08-funday-fashion-original-imafw7ksgd6nvwz3.jpeg?q=70">
+        <p class="bestofElectornicProduct_name">Casual Shirt(Pack of 2)</p>
+        <p class="bestofElecronic_discount">From ₹499</p>
+        <button class="add-to-cart" >ADD TO CART</button>
+
+
+
+
+
+    </div>
+    </div>
+
+</div>
+
+
+<div class="product" >
+    <div class="BestofElectronic_item a6">   
+
+    <div class="bestOfElectornic_image_Product" >
+            <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/m/n/v/m-all-oc-one-lieo-trend-original-imagj4dfbjhuzfhr.jpeg?q=70" >
+    </div>
+    <div class="bestofElectronicmoreOption" data-id="18" data-name="Black T-Shirt" data-price="259" data-img="https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/m/n/v/m-all-oc-one-lieo-trend-original-imagj4dfbjhuzfhr.jpeg?q=70">
+        <p class="bestofElectornicProduct_name">Black T-Shirt</p>
+        <p class="bestofElecronic_discount">From ₹259</p>
+        <button class="add-to-cart" >ADD TO CART</button>
+
+    
+    </div>
+    </div>
+
+</div>
+
+   
+
+</div>
+                
+
+        </div>
+    </div>
+
+
+    <div class="bestofElectronic_Contianer" >
+        <div class="bestofElectronic_list">
+
+
+            <!-- name -->
+            <div class="BestofElectronic_item ">
+                <div class="bestofElectronic_bigText ii">Beauty, Food, Toys & more</div>
+                <a href="#" class="viewAllBtn">View All</a>
+                <div class="bestofElectronicmoreOption i1">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90">
+                </div>
+            </div>
+
+            <!-- products -->
+            <!-- product1 -->
+            <div class="bestofElctronic_product_item b1 " >
+               <div class="BestofElectronic_item ">   
+                <div class="bestOfElectornic_image_Product" img-id="7">
+                    <img src="https://rukminim2.flixcart.com/image/200/200/l111lzk0/cycle/m/r/e/xc-900-grey-lite-26-15-5-cradiac-21-gear-120-original-imagczuzpxeweczm.jpeg?q=70">
+               </div>
+                <div class="bestofElectronicmoreOption product " data-id="7" data-name="Geared Cycle" data-price="3999" data-img="https://rukminim2.flixcart.com/image/200/200/l111lzk0/cycle/m/r/e/xc-900-grey-lite-26-15-5-cradiac-21-gear-120-original-imagczuzpxeweczm.jpeg?q=70">
+                   <p class="bestofElectornicProduct_name">Geared Cycle</p>
+                   <p class="bestofElecronic_discount">From ₹3999</p>
+                   <!-- <p class="bestofElectronic_brand">DELL</p> -->
+                    <button class="add-to-cart" >ADD TO CART</button>
+                </div>
+            </div>
+            </div>
+        <!-- product2 -->
+
+            <div class="product" >
+    <div class="BestofElectronic_item b2">   
+
+    <div class="bestOfElectornic_image_Product" img-id="8">
+        <img src="https://rukminim2.flixcart.com/image/200/200/kx50gi80/pen/h/z/k/119766-flair-original-imag9nzubznagufg.jpeg?q=70">
+    </div>
+    <div class="bestofElectronicmoreOption" data-id="8" data-name="Top Selling Stationery" data-price="49" data-img="https://rukminim2.flixcart.com/image/200/200/kx50gi80/pen/h/z/k/119766-flair-original-imag9nzubznagufg.jpeg?q=70">
+        <p class="bestofElectornicProduct_name">Top Selling Stationery</p>
+        <p class="bestofElecronic_discount">From ₹49</p>
+        <button class="add-to-cart" >ADD TO CART</button>
+
+
+
+
+    </div>
+    </div>
+
+</div>
+
+
+<div class="product" >
+    <div class="BestofElectronic_item b3">   
+
+    <div class="bestOfElectornic_image_Product" img-id="9" >
+        <img src="https://rukminim2.flixcart.com/image/200/200/kdj4xow0/treadmill/b/g/c/ft098-steel-motorized-ft98-steel-motorized-motorized-fitkit-original-imafuerskytashcz.jpeg?q=70">
+    </div>
+    <div class="bestofElectronicmoreOption" data-id="9" data-name="RPM Fitness" data-price="23099" data-img="https://rukminim2.flixcart.com/image/200/200/kdj4xow0/treadmill/b/g/c/ft098-steel-motorized-ft98-steel-motorized-motorized-fitkit-original-imafuerskytashcz.jpeg?q=70">
+        <p class="bestofElectornicProduct_name"> RPM Fitness</p>
+        <p class="bestofElecronic_discount">From ₹23099</p>
+        <button class="add-to-cart" >ADD TO CART</button>
+
+
+
+
+
+    </div>
+    </div>
+
+</div>
+
+
+<div class="product" >
+    <div class="BestofElectronic_item b4">   
+
+    <div class="bestOfElectornic_image_Product" img-id="10" >
+        <img src="https://rukminim2.flixcart.com/image/612/612/l3lx8cw0/nut-dry-fruit/j/n/h/1-dry-fruit-combo-almond-cashew-1kg-pack-of-2-2-plastic-bottle-original-imagezvnc7nsx5gh.jpeg?q=70">
+    </div>          
+    <div class="bestofElectronicmoreOption" data-id="10" data-name="Almond+Cashew(1 kg)" data-price="750" data-img="https://rukminim2.flixcart.com/image/612/612/l3lx8cw0/nut-dry-fruit/j/n/h/1-dry-fruit-combo-almond-cashew-1kg-pack-of-2-2-plastic-bottle-original-imagezvnc7nsx5gh.jpeg?q=70">
+        <p class="bestofElectornicProduct_name">Almond+Cashew(1 kg)</p>
+        <p class="bestofElecronic_discount">From ₹750</p>
+        <button class="add-to-cart" >ADD TO CART</button>
+
+
+
+
+
+    </div>
+    </div>
+
+</div>
+
+
+<div class="product" >
+    <div class="BestofElectronic_item b5">   
+
+    <div class="bestOfElectornic_image_Product" img-id="11" >
+        <img src="https://rukminim2.flixcart.com/image/612/612/kfsl18w0/stuffed-toy/t/z/z/3-feet-soft-spongy-teddy-gift-some-one-special-gift-91-cm-91-original-imafw69pds82hmh6.jpeg?q=70">
+    </div>
+    <div class="bestofElectronicmoreOption" data-id="11" data-name="Red Teddy" data-price="399" data-img="https://rukminim2.flixcart.com/image/612/612/kfsl18w0/stuffed-toy/t/z/z/3-feet-soft-spongy-teddy-gift-some-one-special-gift-91-cm-91-original-imafw69pds82hmh6.jpeg?q=70">
+        <p class="bestofElectornicProduct_name">Red Teddy</p>
+        <p class="bestofElecronic_discount">From ₹399</p>
+        <button class="add-to-cart" >ADD TO CART</button>
+
+
+
+
+
+    </div>
+    </div>
+
+</div>
+
+
+<div class="product" >
+    <div class="BestofElectronic_item b6">   
+
+    <div class="bestOfElectornic_image_Product" >
+            <img src="https://rukminim2.flixcart.com/image/612/612/l2krs7k0/ukulele/0/w/2/18-kad-uku-24brn-eq-c-1-concert-sized-ukulele-24inch-built-in-original-imagdvw8ztrggyee.jpeg?q=70" >
+    </div>
+    <div class="bestofElectronicmoreOption" data-id="12" data-name="Concert Ukulele" data-price="3999" data-img="https://rukminim2.flixcart.com/image/612/612/l2krs7k0/ukulele/0/w/2/18-kad-uku-24brn-eq-c-1-concert-sized-ukulele-24inch-built-in-original-imagdvw8ztrggyee.jpeg?q=70">
+        <p class="bestofElectornicProduct_name">Concert Ukulele</p>
+        <p class="bestofElecronic_discount">From ₹3999</p>
+        <button class="add-to-cart" >ADD TO CART</button>
+
+    
+    </div>
+    </div>
+
+</div>
+
+   
+
+</div>
+                
+
+        </div>
+    </div>
+    <div class="bestofElectronic_Contianer" >
+        <div class="bestofElectronic_list">
+
+
+            <!-- name -->
+            <div class="BestofElectronic_item ">
+                <div class="bestofElectronic_bigText ii">Best of Electronics</div>
+                <a href="#" class="viewAllBtn">View All</a>
+                <div class="bestofElectronicmoreOption i1">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90">
+                </div>
+            </div>
+
+            <!-- products -->
+            <!-- product1 -->
+            <div class="bestofElctronic_product_item " >
+               <div class="BestofElectronic_item c1">   
+                <div class="bestOfElectornic_image_Product" img-id="1">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/kmp7ngw0/monitor/j/z/h/s2721hn-27-py0df-dell-original-imagfjphuywuh2a7.jpeg?q=70">
+               </div>
+                <div class="bestofElectronicmoreOption product " data-id="1" data-name="Monitors  (SAMSUNG)" data-price="8279" data-img="https://rukminim1.flixcart.com/image/200/200/kmp7ngw0/monitor/j/z/h/s2721hn-27-py0df-dell-original-imagfjphuywuh2a7.jpeg?q=70">
+                   <p class="bestofElectornicProduct_name">Monitors  (SAMSUNG)</p>
+                   <p class="bestofElecronic_discount">From ₹8279</p>
+                   <!-- <p class="bestofElectronic_brand">DELL</p> -->
+                    <button class="add-to-cart" >ADD TO CART</button>
+                </div>
+            </div>
+            </div>
+        <!-- product2 -->
+
+            <div class="product" >
+    <div class="BestofElectronic_item c2">   
+
+    <div class="bestOfElectornic_image_Product" img-id="2">
+        <img src="https://rukminim1.flixcart.com/image/200/200/l5jxt3k0/dslr-camera/m/n/a/-original-imagg7hsggshhwbz.jpeg?q=70">
+    </div>
+    <div class="bestofElectronicmoreOption" data-id="2" data-name="TopMirrorless Camera" data-price="32790" data-img="https://rukminim1.flixcart.com/image/200/200/l5jxt3k0/dslr-camera/m/n/a/-original-imagg7hsggshhwbz.jpeg?q=70">
+        <p class="bestofElectornicProduct_name">TopMirrorless Camera</p>
+        <p class="bestofElecronic_discount">From ₹32790</p>
+        <button class="add-to-cart" >ADD TO CART</button>
+
+
+
+
+    </div>
+    </div>
+
+</div>
+
+
+<div class="product" >
+    <div class="BestofElectronic_item c3">   
+
+    <div class="bestOfElectornic_image_Product" img-id="3" >
+        <img src="https://rukminim1.flixcart.com/image/200/200/printer/j/j/y/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.jpeg?q=70">
+    </div>
+    <div class="bestofElectronicmoreOption" data-id="3" data-name=" Printers (HP color)" data-price="3999" data-img="https://rukminim1.flixcart.com/image/200/200/printer/j/j/y/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.jpeg?q=70">
+        <p class="bestofElectornicProduct_name"> Printers (HP color)</p>
+        <p class="bestofElecronic_discount">From ₹3999</p>
+        <button class="add-to-cart" >ADD TO CART</button>
+
+
+
+
+
+    </div>
+    </div>
+
+</div>
+
+
+<div class="product" >
+    <div class="BestofElectronic_item c4">   
+
+    <div class="bestOfElectornic_image_Product" img-id="4" >
+        <img src="https://rukminim2.flixcart.com/image/200/200/kx50gi80/projector/r/9/p/zeb-pixa-play-12-5-6-dobly-audio-led-projector-zebronics-original-imag9z3yujqmzqt4.jpeg?q=70">
+    </div>          
+    <div class="bestofElectronicmoreOption" data-id="4" data-name="Projectors(ZEBRONICS)" data-price="9999" data-img="https://rukminim2.flixcart.com/image/200/200/kx50gi80/projector/r/9/p/zeb-pixa-play-12-5-6-dobly-audio-led-projector-zebronics-original-imag9z3yujqmzqt4.jpeg?q=70">
+        <p class="bestofElectornicProduct_name">Projectors(ZEBRONICS)</p>
+        <p class="bestofElecronic_discount">From ₹9999</p>
+        <button class="add-to-cart" >ADD TO CART</button>
+
+
+
+
+
+    </div>
+    </div>
+
+</div>
+
+
+<div class="product" >
+    <div class="BestofElectronic_item c5">   
+
+    <div class="bestOfElectornic_image_Product" img-id="5" >
+        <img src="https://rukminim2.flixcart.com/image/200/200/xif0q/power-bank/d/a/f/-original-imagky3e8yp5ebvr.jpeg?q=70">
+    </div>
+    <div class="bestofElectronicmoreOption" data-id="5" data-name="Premium Power Bank" data-price="5000" data-img="https://rukminim2.flixcart.com/image/200/200/xif0q/power-bank/d/a/f/-original-imagky3e8yp5ebvr.jpeg?q=70">
+        <p class="bestofElectornicProduct_name">Premium Power Bank</p>
+        <p class="bestofElecronic_discount">From ₹5000</p>
+        <button class="add-to-cart" >ADD TO CART</button>
+
+
+
+
+
+    </div>
+    </div>
+
+</div>
+
+
+<div class="product" >
+    <div class="BestofElectronic_item c6">   
+
+    <div class="bestOfElectornic_image_Product" >
+            <img src="https://rukminim1.flixcart.com/image/400/400/kingqkw0-0/hair-straightener/s/v/x/hp8302-06-philips-original-imaf9jzzzurgqykt.jpeg?q=70" >
+    </div>
+    <div class="bestofElectronicmoreOption" data-id="6" data-name="Best of Hair straightener" data-price="3999" data-img="https://rukminim1.flixcart.com/image/400/400/kingqkw0-0/hair-straightener/s/v/x/hp8302-06-philips-original-imaf9jzzzurgqykt.jpeg?q=70">
+        <p class="bestofElectornicProduct_name">Best of Hair straightener</p>
+        <p class="bestofElecronic_discount">From ₹3999</p>
+        <button class="add-to-cart" >ADD TO CART</button>
+
+    
+    </div>
+    </div>
+
+</div>
+
+   
+
+</div>
+                
+
+        </div>
+    </div>
+    <br><br>
+   <div class="para">
+    <p>
+       <h1>What Can You Buy From Flipkart?</h1> <br><br>
+
+     <h1>Mobile Phones</h1> <br>  <br>
+
+From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, brazing fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of at the exentals Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Rostmi, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable nanties in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entals you to a number of post-purchase solutions, starting at as low as Rupees Boy! Broken screens, quid damage to phone, hardware and software gitches, and replacements the Fipkart Complete Mobile Protection covers a comprehensive range of post-purchase problems, with door-to-door services
+
+    <br><br> <h1> Electronic Devices and Accessories</h1> <br>    <br>
+
+When it comes to laptops, we are not far behind, Filtar among dozens of super fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All you students out there, confused about what laptop to get? Our Back To College Store segregates laptops purpose wise foaming browsing and research, project work, entertainment, design, multitasking with recommendations from top brands and industry experts, facilitating a shopping experience that is quicker and simpler.
+
+Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR camera, ever reliable point-and-shoot cameras, mennial favounts instant cameras or action cameras for adventure Junkies: our range of cameras is as much for beginners as it as for professionals
+
+Canon Nikon, Goffro, Sony, and Futun are some big names you find in our store Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras aver reliable point-and-shoot cameras, maltavou vestant cameras or action cameras for adventure
+
+junkies: our range of cameras is as much for beginners as it is for professional Canon, Nikon, GoPro, Sony, and Fulfilm are some big names you'll find in our store.
+
+Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony home theatres, JBL soundbars and Philps tower speakers for an experience to remember.
+
+How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile accessories starting from headphones, power banks, memory cards, cole charge, to selfie sticks can prove to be ideal test companions for you and your phone never again worry about running out of charge or memory on your next vacation
+
+       <br><br> <h1>Large Appliances</h1> <br><br>
+
+Steak TV, power-saving wirigerators, rapid-cooling AC, resourceful washing machines-discover everything you need to run a house under one roof. Our Dependable TV and Appliance Store ensures zero transit damage, with a replacement guarantee if anything goes wrong; delivery and Installation as per your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty)-rest assured, value for money is what is promised and delivered. Soop from market leaders in the country Samung, LG, Whirlpool, Mides, M, Vu, Panasonic Godrej, Sony, Dakin, and Hitachi among many others.
+
+For certain product categories Customers meeting the eligibility criteria will have the option to buy larger quantities. To know more on the uligibility criteria and terms and conditions, please reach out to Purchases onflipkart.com
+
+<br><br> <h1>Small Home Appliances</h1><br><br>
+
+Find handy and practical home appliances designed to make your life simple electric kettles, OTGs, microwave ovens, sandwich makers, band bands, coffee makers, and many more other time saving appliances that are truly crated for a quicker ifestyle. Live life king size with these appliances at home
+
+    <br><br><h1>Lifestyle</h1><br><br>
+
+Flipkart, Indiako Fashion Capitar, is your one stop fashion destimation for anything and everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing, formal and casual footwear, bridal and artificial jewelery, long-lasting make up, grooming tools and accessories are sure to sweep you off your feet Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-adder names. From summer staple maid dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe that is up to date. Explore our in-house brands like Metronaut, Anni, and Denizen, to name a few, for carefully curated designs that are the talk of the town. Get ready to be spoiled for choice Festivals, office get-togethers, weddings, brunches, or nightwear-Flipkart will have your buck auch time.
+    </p>
+   </div>
+    <footer class="foo">
+        <p>&copy; Ratnamani. All rights reserved.</p>
+    </footer>
+   
+    <div class="bodyy" id="cartt">
+        <!-- <header>
+            <h1>Shopping Cart</h1> 
+            <button class="home1"><a href="#bodyy">HOME</a></button>
+        </header> -->
+<!-- navigation bar -->
+<nav class="heading_navigation flex" id="navigation_heading">
+    <div class="nav_container flex">
+        <div class="logo flex">
+            <a href="./html/index.html" class="flip_logo"><img src="./images/logo.png" alt="logo"></a>
+            <a href="./html/index.html" class="anchor plus">Explore <span class="plus_lan">Plus <img src="./images/plus_icon.png" alt="logo"></span></a>
+        </div>
+        <!-- searchbar-->
+        <div class="search_bar_container">
+            <div class="search_bar">
+                <form action="" class="search flex">
+                    <input type="text" placeholder="Search For products, brands and more" class="search_box">
+                    <button class="btn_search">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Login Button-->
+        <div class="login">
+            <a href="#cartt" class="login_btn">login</a>
+            <div class="login_dropdown none">
+                <ul class="login_dropdown_list">
+                    <li class="login_drop_li sign_li flex">
+                        <p class="new_login">New customer</p>
+                        <a href="./html/login.html" class="sign_up">Sign Up</a>
+                    </li>
+                    <li class="login_drop_li">My Profile</li>
+                    <li class="login_drop_li">Flipkart Plus Zne</li>
+                    <li class="login_drop_li"> Orders</li>
+                    <li class="login_drop_li">Whishlist</li>
+                    <li class="login_drop_li">Rewards</li>
+                    <li class="login_drop_li">Gift Cards</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+        <main>
+            
+            <div class="cart-items" id="cart-items">
+                
+            </div>
+            <div class="cart-summary" >
+                <h2 ><center>Cart Summary</center></h2>
+                <ul id="cart"></ul>
+                <br><br>
+                <div class="itemss">
+                    <span class="totali">Total Items:</span>
+                    <span id="totalitems" class="totalitems"></span>
+
+                </div>
+                <div class="cart-total">
+                    <span class="total">Total Amount:</span>
+                    <span id="total-price" style="color: red;"></span>
+                </div>
+                <button class="checkout-btn">Checkout</button>
+        <div class="popup" id="popup">
+            <h1 class="popuph1" style="color: white;">Remove Item</h1>
+            <h3 class="popuph3">Are you Sure you want to remove this item?</h3>
+            <button class="popcan" id="popcan">Cancel</button>            
+            <button class="popremo" id="popremo">Remove</button>            
+        </div>
+            </div>
+
+        </main>
+
+       
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
